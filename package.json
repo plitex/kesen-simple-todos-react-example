@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "concurrently --prefix \"{time}-{name}\" -n \"SERVER,CLIENT\" -c \"yellow.bold,cyan.bold\" \"yarn server:start\" \"yarn client:start\"",
+    "postinstall": "yarn client:install && yarn server:install",
+    "client:install": "cd client && yarn install",
+    "client:start": "cd client && yarn start",
+    "server:install": "cd server && meteor npm install",
+    "server:start": "cd server && yarn start"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
