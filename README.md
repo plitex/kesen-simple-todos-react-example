@@ -1,4 +1,11 @@
-# kesen-simple-todos-react-example
-Kesen Simple Todos React example
+# Simple Todos React (With Kesen)
 
-(WORK IN PROGRESS)
+This is an example of how to use **Kesen** package and create react app to isolate the frontend of a Meteor application
+
+NOTE: **Kesen** package is under active development and it's not stable for production
+
+## Start
+
+```bash
+$ yarn install && yarn start
+```
