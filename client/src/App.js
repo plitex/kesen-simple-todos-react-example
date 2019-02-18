@@ -84,7 +84,7 @@ class App extends Component {
 
 function reactiveMapper(subscribe, props, onData) {
   const handle = subscribe('tasks');
-  if (handle.ready) {
+  if (handle.ready()) {
     onData(null, {
       tasks: Tasks.find(),
       incompleteCount: Tasks.find({ checked: { $ne: true } }).length,
