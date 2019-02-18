@@ -2,8 +2,8 @@
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { getClient } from 'kesen';
 import { compose } from 'react-komposer';
+import Kesen from 'kesen';
 
 import './App.css';
 import Task from './Task.js';
@@ -26,8 +26,7 @@ class App extends Component {
     // Find the text field via the React ref
     const text = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
 
-    const client = getClient();
-    client.call('tasks.insert', text).catch(err => console.error(err.message));
+    Kesen.call('tasks.insert', text).catch(err => console.error(err.message));
 
     // Clear form
     ReactDOM.findDOMNode(this.refs.textInput).value = '';
@@ -85,12 +84,11 @@ class App extends Component {
 
 function reactiveMapper(subscribe, props, onData) {
   const handle = subscribe('tasks');
-  const client = getClient();
   if (handle.ready) {
     onData(null, {
       tasks: Tasks.find(),
       incompleteCount: Tasks.find({ checked: { $ne: true } }).length,
-      currentUser: client.getUserId()
+      currentUser: null
     });
   }
 }
