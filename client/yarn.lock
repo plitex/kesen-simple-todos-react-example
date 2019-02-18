@@ -5837,10 +5837,10 @@ jsx-ast-utils@^2.0.1:
   dependencies:
     array-includes "^3.0.3"
 
-kesen@^1.0.0-alpha.0:
-  version "1.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/kesen/-/kesen-1.0.0-alpha.0.tgz#3ddcef7772898296d3a2e921d994b4ee2a4abfd6"
-  integrity sha512-mxLhh+WFUy242wmQiBAS+z+dTmbTVa4OnMNjKCBN2wSCz2dYbgj3+daPRx2wB0lh9T5Hd09zKnSmxHhahXw8QQ==
+kesen@~0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/kesen/-/kesen-0.1.0.tgz#c86dc5cf00b83b359f04b5c7dbe7e0debbdec733"
+  integrity sha512-srhcqxZMhSj7B5YresabjqRaWGKpcrFRNA3DAMiPsyVqEFMC9AHVlpYnDrRl3sjPTbjMK1ND61NdUxzu+4hEYg==
   dependencies:
     "@types/debug" "^4.1.0"
     "@types/uuid" "^3.4.4"
