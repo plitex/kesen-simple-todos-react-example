@@ -5,6 +5,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "kesen": "^1.0.0-alpha.0",
+    "http-proxy-middleware": "^0.19.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-komposer": "^2.0.0",
@@ -24,6 +25,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "proxy": "http://127.0.0.1:4000/"
+  ]
 }
